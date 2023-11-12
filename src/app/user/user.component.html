@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <ul *ngFor="let user of users">
+    <li *ngIf="validateName(user.name)">
+      {{user.id}}, 
+      {{user.name}}, 
+      {{user.email}}
+    </li>
+  </ul>
+</div>
